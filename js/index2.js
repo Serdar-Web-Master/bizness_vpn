@@ -23,9 +23,6 @@ console.log("password_3=" + password_3);
 const password_4 = password * password2 * 40;
 console.log("password_4=" + password_4);
 
-const admin = 250179;  
-const aiya = 160491;
-
 btn.addEventListener("click", modalOpen);
 close__block.addEventListener("click", modalClose);
 
@@ -39,21 +36,40 @@ function modalOpen() {
   modal.style.display = "block";
 }
 
+const admin = 250179;
+const aiya = 160491;
+const client1 = 638378; // Ira
+const client2 = 393027;
+const client3 = 835486;
+const client4 = 365436;
+const client5 = 632198;
+const client6 = 179470;
+const client7 = 152853;
+const client8 = 937586;
+const client9 = 136706;
+const client10 = 935669;
+
+
 function checkInput() {
   const kod = modal__input.value;
   console.log(kod);
-  if (kod == password_1 || kod == admin || kod == aiya) {
+  if (kod == password_1 || kod == admin || kod == aiya || kod == client1 || kod == client2 || kod == client3 || kod == client4 || kod == client5 || kod == client6 || kod == client7 || kod == client8 || kod == client9 || kod == client10) {
     ssylka1.click();
+    console.log("ssylka1");
   }
-  if (kod == password_2 || kod == admin || kod == aiya) {
-    ssylka2.click();
-  }
-  if (kod == password_3 || kod == admin || kod == aiya) {
-    ssylka3.click();
-  }
-  if (kod == password_4 || kod == admin || kod == aiya) {
-    ssylka4.click();
-  } else {
+  // if (kod == password_2 || kod == admin || kod == aiya) {
+  //   ssylka2.click();
+  //   console.log("ssylka2");
+  // }
+  // if (kod == password_3 || kod == admin || kod == aiya) {
+  //   ssylka3.click();
+  //   console.log("ssylka3");
+  // }
+  // if (kod == password_4 || kod == admin || kod == aiya) {
+  //   ssylka4.click();
+  //   console.log("ssylka4");
+  // } 
+  else {
     alert("Код Неверный");
   }
 }
